@@ -122,4 +122,6 @@ public class Contact {
         System.out.println("enter your number");
         number = sc.nextLong();
     }
+
+
 }

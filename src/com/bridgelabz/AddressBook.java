@@ -9,6 +9,7 @@ public class AddressBook {
 
     ArrayList<Contact> list = new ArrayList();
 
+
     public void addNewContact(){
         System.out.println("enter your firstname");
         String firstname =sc.next();
@@ -42,6 +43,23 @@ public class AddressBook {
                 contact.editExistingContact();
             }
         }
+    }
+
+    public void deleteContact(){
+
+        System.out.println("enter your firstname");
+        String firstname = sc.next();
+        System.out.println("enter your lastname");
+        String lastname = sc.next();
+
+        for (Contact contact:list){
+            if(contact.getFirstname().equals(firstname) && contact.getLastname().equals(lastname)){
+                list.remove(contact);
+
+            }
+            }
+
+
     }
 
 }
