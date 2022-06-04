@@ -1,6 +1,10 @@
 package com.bridgelabz;
 
+import java.util.Scanner;
+
 public class Contact {
+
+    static Scanner sc = new Scanner(System.in);
 
     String firstname;
     String lastname;
@@ -101,4 +105,21 @@ public class Contact {
     }
 
 
+    public void editExistingContact() {
+
+        System.out.println("enter your firstname");
+        firstname = sc.next();
+        System.out.println("enter your lastname");
+        lastname = sc.next();
+        System.out.println("enter your email address");
+        email = sc.next();
+        System.out.println("enter your address");
+        address = sc.next();
+        System.out.println("enter your city");
+        city = sc.next();
+        System.out.println("enter your zip code");
+        zip = sc.nextLong();
+        System.out.println("enter your number");
+        number = sc.nextLong();
+    }
 }

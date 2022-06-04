@@ -29,6 +29,19 @@ public class AddressBook {
 
         Contact contact = new Contact(firstname,lastname,email,address,city,state,zip,number);
         list.add(contact);
+
+    }
+    public void editContact(){
+        System.out.println("enter your firstname");
+        String firstname = sc.next();
+        System.out.println("enter your lastname");
+        String lastname = sc.next();
+
+        for (Contact contact:list){
+            if(contact.getFirstname().equals(firstname) && contact.getLastname().equals(lastname)){
+                contact.editExistingContact();
+            }
+        }
     }
 
 }
